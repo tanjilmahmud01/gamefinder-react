@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import { SanityContext } from "../context/SanityContext";
 import Layout from "../layout/layout";
+import NewLayOut from "../layout/NewLayOut";
 
 const Cart = () => {
   const { cart } = useContext(SanityContext);
 
   return (
-    <Layout title="Cart">
+    <NewLayOut title="Cart">
       <div>
         <div className="overflow-x-auto">
           <table className="table">
@@ -76,7 +77,7 @@ const Cart = () => {
           </table>
         </div>
       </div>
-    </Layout>
+    </NewLayOut>
   );
 };
 

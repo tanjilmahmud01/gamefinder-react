@@ -5,6 +5,7 @@ import { PortableText } from "@portabletext/react";
 import Loader from "../component/loader";
 import ReactPlayer from "react-player";
 import Layout from "../layout/layout";
+import NewLayOut from "../layout/NewLayOut";
 
 const SingleGameDetails = () => {
   const { id } = useParams();
@@ -26,7 +27,7 @@ const SingleGameDetails = () => {
   }, []);
 
   return (
-    <Layout title="Game">
+    <NewLayOut title="Game">
       <section>
         <div className="flex justify-center mt-5">
           {loading && <Loader></Loader>}
@@ -93,7 +94,7 @@ const SingleGameDetails = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </NewLayOut>
   );
 };
 

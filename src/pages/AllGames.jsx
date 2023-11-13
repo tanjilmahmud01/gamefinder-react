@@ -4,6 +4,7 @@ import { urlFor } from "../lib/sanity";
 import GamesCard from "../component/GamesCard";
 import Loader from "../component/loader";
 import Layout from "../layout/layout";
+import NewLayOut from "../layout/NewLayOut";
 
 const AllGames = () => {
   const {
@@ -17,7 +18,7 @@ const AllGames = () => {
     goPrevPage,
   } = useContext(SanityContext);
   return (
-    <Layout title="Store">
+    <NewLayOut title="Store">
       <div>
         <div className="flex md:flex-row flex-col justify-center mt-5 gap-5">
           <input
@@ -66,7 +67,7 @@ const AllGames = () => {
           </button>
         </div>
       </div>
-    </Layout>
+    </NewLayOut>
   );
 };
 
