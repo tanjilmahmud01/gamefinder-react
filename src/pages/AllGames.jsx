@@ -3,7 +3,7 @@ import { SanityContext } from "../context/SanityContext";
 import { urlFor } from "../lib/sanity";
 import GamesCard from "../component/GamesCard";
 import Loader from "../component/loader";
-import Layout from "../layout/layout";
+
 import NewLayOut from "../layout/NewLayOut";
 
 const AllGames = () => {

@@ -4,7 +4,7 @@ import { client } from "../lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Loader from "../component/loader";
 import ReactPlayer from "react-player";
-import Layout from "../layout/layout";
+
 import NewLayOut from "../layout/NewLayOut";
 
 const SingleGameDetails = () => {

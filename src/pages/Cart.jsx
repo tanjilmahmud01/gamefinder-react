@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { SanityContext } from "../context/SanityContext";
-import Layout from "../layout/layout";
+
 import NewLayOut from "../layout/NewLayOut";
 
 const Cart = () => {
