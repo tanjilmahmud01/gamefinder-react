@@ -2,10 +2,11 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { client } from "../lib/sanity";
 import { PortableText } from "@portabletext/react";
-import Loader from "../component/loader";
+
 import ReactPlayer from "react-player";
 
 import NewLayOut from "../layout/NewLayOut";
+import NewLoader from "../component/NewLoader";
 
 const SingleGameDetails = () => {
   const { id } = useParams();
@@ -30,7 +31,7 @@ const SingleGameDetails = () => {
     <NewLayOut title="Game">
       <section>
         <div className="flex justify-center mt-5">
-          {loading && <Loader></Loader>}
+          {loading && <NewLoader></NewLoader>}
         </div>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-col lg:flex-row gap-4 justify-center border border-green-600">

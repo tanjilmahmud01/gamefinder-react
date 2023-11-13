@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { SanityContext } from "../context/SanityContext";
 import { urlFor } from "../lib/sanity";
 import GamesCard from "../component/GamesCard";
-import Loader from "../component/loader";
 
 import NewLayOut from "../layout/NewLayOut";
+import NewLoader from "../component/NewLoader";
 
 const AllGames = () => {
   const {
@@ -38,7 +38,7 @@ const AllGames = () => {
           </select>
         </div>
         <div className="flex justify-center mt-5">
-          {loading && <Loader></Loader>}
+          {loading && <NewLoader></NewLoader>}
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 container mx-auto">
           {games.slice(0, 6).map((game) => (
