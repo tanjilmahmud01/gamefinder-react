@@ -9,6 +9,7 @@ export const client = createClient({
   token: import.meta.env.VITE_SANITY_TOKEN, // Only if you want to update content with the client
 });
 
+//image builder for showing image type data field from Sanity
 const builder = imageUrlBuilder(client);
 export function urlFor(source) {
   return builder.image(source);
